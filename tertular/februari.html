@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Data Covid-19 2021</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#page-top">COVID-19</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Tertular
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="../index.html">Januari</a></li>
+                              <li><a class="dropdown-item" href="./februari.html">Februari</a></li>
+                              <li><a class="dropdown-item" href="./maret.html">Maret</a></li>
+                              <li><a class="dropdown-item" href="./april.html">April</a></li>
+                              <li><a class="dropdown-item" href="./mei.html">Mei</a></li>
+                              <li><a class="dropdown-item" href="./juni.html">Juni</a></li>
+                              <li><a class="dropdown-item" href="./juli.html">Juli</a></li>
+                              <li><a class="dropdown-item" href="./agustus.html">Agustus</a></li>
+                              <li><a class="dropdown-item" href="./september.html">September</a></li>
+                              <li><a class="dropdown-item" href="./oktober.html">Oktober</a></li>
+                              <li><a class="dropdown-item" href="./november.html">November</a></li>
+                              <li><a class="dropdown-item" href="./desember.html">Desember</a></li>
+                            </ul>
+                          </li>                        
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Sembuh
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="../sembuh/agustus.html">Agustus</a></li>
+                              <li><a class="dropdown-item" href="../sembuh/september.html">September</a></li>
+                              <li><a class="dropdown-item" href="../sembuh/oktober.html">Oktober</a></li>
+                              <li><a class="dropdown-item" href="../sembuh/november.html">November</a></li>
+                              <li><a class="dropdown-item" href="../sembuh//desember.html">Desember</a></li>
+                            </ul>
+                          </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-0">Covid-19</h1>
+                    <h2 class="masthead-subheading mb-0">Infected or Healed</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Let's Check</a>
+                </div>
+            </div>
+        </header>
+        <!-- Content section 1-->
+       
+        <!-- Content section 2-->
+        <section id="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-12">
+                        <div class="p-5">
+                            <h2 id="title"></h2>
+                            <form class="row g-2" action="#">
+                                <div class="col-auto">
+                                    <input type="date" class="form-control form-control-sm" id="firstdate" min="2021-02-01" max="2021-02-28"> 
+                                </div>
+                                <div class="col-auto">
+                                    <span>-</span>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="date" class="form-control form-control-sm" id="lastdate" min="2021-02-01" max="2021-02-28">
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-success btn-sm" onclick="ubahtanggal()">Check</button>
+                                </div>
+                            </form>
+                            <!-- <div id="grafik" style="width:1000px; height: 500px;"></div> -->
+                            <div id="grafik1" class="mt-2" style="width:1000px; height: 500px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+        <script src="../flotr2.min.js"></script>
+        <script>
+                function ubahtanggal(){
+                    var fDate = document.getElementById('firstdate').value
+                    var lDate = document.getElementById('lastdate').value;
+                    getData(fDate, lDate);
+                }
+
+
+
+                function getData(strtDate = '2021/2/1', finishDate = '2021/2/28'){
+                var a1 = new Date(strtDate);
+                var a2 = new Date(finishDate);
+                year1 = a1.getFullYear();month1 = a1.getMonth()+1;day1 = a1.getDate();
+                year2 = a2.getFullYear();month2 = a2.getMonth()+1;day2 = a2.getDate();
+                // if(month1 < 10)month1 = '0'+month1;
+                if(day1 < 10 )day1 = '0'+day1;
+                if(month2 < 10)month2 = '0'+month2;
+                if(day2 < 10 )day2 = '0'+day2;
+                var fullstart = day1 +'/'+ month1 +'/'+year1; 
+                var fullfinish = day2 +'/'+ month2 +'/'+year2;
+                console.log(fullstart, fullfinish)
+                    // Total Active Case
+                var lokasi = [[1, "ACEH"],[2, "SUMATERA UTARA"],[3, "SUMATERA BARAT"],[4, "RIAU"],[5, "JAMBI"],
+                    [6, "SUMATERA SELATAN"],[7, "BENGKULU"],[8, "LAMPUNG"],[9, "KEPULAUAN BANGKA BELITUNG"],[10, "KEPULAUAN RIAU"],
+                    [11, "DKI JAKARTA"], [12, "JAWA BARAT"],[13, "JAWA TENGAH"], [14, "DI YOGYAKARTA"], [15, "JAWA TIMUR"],
+                    [16, "BANTEN"],[17, "BALI"], [18, "NUSA TENGGARA BARAT"],[19, "NUSA TENGGARA TIMUR"], [20, "KALIMANTAN BARAT"],
+                    [21, "KALIMANTAN TENGAH"], [22, "KALIMANTAN SELATAN"],[23, "KALIMANTAN TIMUR"], [24, "KALIMANTAN UTARA"],[25, "SULAWESI UTARA"],
+                    [26, "SULAWESI TENGAH"], [27, "SULAWESI SELATAN"], [28, "SULAWESI TENGGARA"],[29, "GORONTALO"], [30, "SULAWESI BARAT"],
+                    [31, "MALUKU"], [32, "MALUKU UTARA"],[33, "PAPUA BARAT"], [34, "PAPUA"], [35, "INDONESIA"]
+                ];
+                
+
+                // New Cases
+                var arr = [];
+                var xarr = [];
+                var sarr = [];
+                var strt = [];
+                var finish = [];
+                var j = 0;
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var datacovid=JSON.parse(xhttp.responseText);
+                        for (var i=0; i<datacovid.length; i++) {
+                            if(parseInt(datacovid[i].Date.substring(6,10)) >= year1 && parseInt(datacovid[i].Date.substring(6,10)) <= year2){
+                                console.log(month1);
+                                if(parseInt(datacovid[i].Date.substring(3,5)) >= month1 && parseInt(datacovid[i].Date.substring(3,5)) <= parseInt(month2)){
+                                    if((parseInt(datacovid[i].Date.substring(0,2)) >= parseInt(day1)) && (parseInt(datacovid[i].Date.substring(0,2)) <= parseInt(day2))){
+                                        if(parseInt(datacovid[i].Id_Location) == 35){
+                                            arr.push([j, parseInt(datacovid[i].New_Cases)]);
+                                            xarr.push([j, datacovid[i].Date]); 
+                                            sarr.push([j, datacovid[i].Date.substring(0,2)])
+                                            j++;
+                                        } 
+                                    }
+                                }
+                            }   
+                        }
+                        strt = xarr[0][1];
+                        finish = xarr[xarr.length-1][1];
+                    }          
+
+                    Flotr.draw(document.getElementById("grafik1"), 
+                        [arr], {
+                        bars:{show:true},
+                        colors: ['red'],
+                        mouse: {
+                                track: true,
+                                lineColor: 'darkred',                                
+                                trackFormatter: function(obj){ return `New Cases: ${obj.y} | Indonesia | ${xarr[obj.x][1]}`; },                                    
+                                                                        trackDecimals: 0, 
+                                                                        trackY: true,          // => whether or not to track the mouse in the y axis
+                                                                        radius: 2
+                            },
+                        grid: {verticalLines: false,backgroundColor: 'white'},
+                        yaxis: {min:0, title: "New Cases",titleAngle: 90,titleAlign: 'center'},
+                        xaxis: {ticks:sarr, min: 0, title: "Date"}, //koordinat x
+                        HtmlText: false,
+                        legend: {position: 'nw'}
+                        
+                    });
+                    // document.getElementById("title").innerHTML = `Jumlah Perkembangan Penduduk Indonesia yang Sembuh dari Penyakit Corona (${[strt]} - ${finish})`;
+                    document.getElementById("title").innerHTML = `Jumlah Perkembangan Penduduk Indonesia yang Tertular Penyakit Corona (${[strt]} - ${finish})`;
+                };
+                xhttp.open("GET", "../datacovid2021/datafebruari.json", true);
+                xhttp.send();
+                    
+            }
+            getData();
+        </script>
+    </body>
+</html>

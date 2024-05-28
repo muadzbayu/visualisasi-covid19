@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Data Covid-19 2021</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#page-top">COVID-19</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Tertular
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="../index.html">Januari</a></li>
+                              <li><a class="dropdown-item" href="../tertular/februari.html">Februari</a></li>
+                              <li><a class="dropdown-item" href="../tertular/maret.html">Maret</a></li>
+                              <li><a class="dropdown-item" href="../tertular/april.html">April</a></li>
+                              <li><a class="dropdown-item" href="../tertular/mei.html">Mei</a></li>
+                              <li><a class="dropdown-item" href="../tertular/juni.html">Juni</a></li>
+                              <li><a class="dropdown-item" href="../tertular/juli.html">Juli</a></li>
+                              <li><a class="dropdown-item" href="../tertular/agustus.html">Agustus</a></li>
+                              <li><a class="dropdown-item" href="../tertular/september.html">September</a></li>
+                              <li><a class="dropdown-item" href="../tertular/oktober.html">Oktober</a></li>
+                              <li><a class="dropdown-item" href="../tertular/november.html">November</a></li>
+                              <li><a class="dropdown-item" href="../tertular/desember.html">Desember</a></li>
+                            </ul>
+                        </li>           
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Sembuh
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="./agustus.html">Agustus</a></li>
+                              <li><a class="dropdown-item" href="./september.html">September</a></li>
+                              <li><a class="dropdown-item" href="./oktober.html">Oktober</a></li>
+                              <li><a class="dropdown-item" href="./november.html">November</a></li>
+                              <li><a class="dropdown-item" href="./desember.html">Desember</a></li>
+                            </ul>
+                          </li>              
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-0">Covid-19</h1>
+                    <h2 class="masthead-subheading mb-0">Infected or Healed</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Let's Check</a>
+                </div>
+            </div>
+        </header>
+        <!-- Content section 1-->
+       
+        <!-- Content section 2-->
+        <section id="scroll">
+            <div class="container-fluid">
+                <div class="p-5">
+                    <h2 id="title">Jumlah Perkembangan Penduduk Indonesia  yang Sembuh dari Penyakit Corona November 2021</h2>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <div id="grafik1" class="mt-2" style="width:500px; height: 250px;"></div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div id="grafik2" class="mt-2" style="width:500px; height: 250px;"></div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <div id="grafik3" class="mt-2" style="width:500px; height: 250px;"></div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div id="grafik4" class="mt-2" style="width:500px; height: 250px;"></div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <div id="grafik5" class="mt-2" style="width:500px; height: 250px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+        <script src="../flotr2.min.js"></script>
+        <script>
+            function grafik1(){
+                // Total Active Case
+                var lokasi = [[1, "ACEH"],[2, "SUMATERA UTARA"],[3, "SUMATERA BARAT"],[4, "RIAU"],[5, "JAMBI"],
+                    [6, "SUMATERA SELATAN"],[7, "BENGKULU"],[8, "LAMPUNG"],[9, "KEPULAUAN BANGKA BELITUNG"],[10, "KEPULAUAN RIAU"],
+                    [11, "DKI JAKARTA"], [12, "JAWA BARAT"],[13, "JAWA TENGAH"], [14, "DI YOGYAKARTA"], [15, "JAWA TIMUR"],
+                    [16, "BANTEN"],[17, "BALI"], [18, "NUSA TENGGARA BARAT"],[19, "NUSA TENGGARA TIMUR"], [20, "KALIMANTAN BARAT"],
+                    [21, "KALIMANTAN TENGAH"], [22, "KALIMANTAN SELATAN"],[23, "KALIMANTAN TIMUR"], [24, "KALIMANTAN UTARA"],[25, "SULAWESI UTARA"],
+                    [26, "SULAWESI TENGAH"], [27, "SULAWESI SELATAN"], [28, "SULAWESI TENGGARA"],[29, "GORONTALO"], [30, "SULAWESI BARAT"],
+                    [31, "MALUKU"], [32, "MALUKU UTARA"],[33, "PAPUA BARAT"], [34, "PAPUA"], [35, "INDONESIA"]
+                ];
+                
+
+                // New Cases
+                var arr = [];
+                var xarr = [];
+                var sarr = [];
+                var strt = [];
+                var finish = [];
+                var j = 0;
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var datacovid=JSON.parse(xhttp.responseText);
+                        for (var i=0; i<datacovid.length; i++) {
+                            if(parseInt(datacovid[i].Date.substring(6,10)) == 2021){
+                                if(parseInt(datacovid[i].Date.substring(3,5)) == 11){
+                                    if((parseInt(datacovid[i].Date.substring(0,2)) >= 1) && (parseInt(datacovid[i].Date.substring(0,2)) <= 7)){
+                                        if(parseInt(datacovid[i].Id_Location) == 35){
+                                            arr.push([j, parseInt(datacovid[i].New_Recovered)]);
+                                            xarr.push([j, datacovid[i].Date]); 
+                                            sarr.push([j, datacovid[i].Date.substring(0,2)])
+                                            j++;
+                                        } 
+                                    }
+                                }
+                            } 
+                        }
+                        // strt = xarr[0][1];
+                        // finish = xarr[xarr.length-1][1];
+                        strt = xarr[0][1];
+                        finish = xarr[xarr.length-1][1];
+                    }          
+
+                    Flotr.draw(document.getElementById("grafik1"), 
+                        [arr], {title :'Minggu ke-1',
+                        bars:{show:true},
+                        colors: ['green'],
+                        mouse: {
+                                track: true,
+                                lineColor: 'darkred',                                
+                                trackFormatter: function(obj){ return `New Recovered: ${obj.y} | Indonesia | ${xarr[obj.x][1]}`; },                                    
+                                                                        trackDecimals: 0, 
+                                                                        trackY: true,          // => whether or not to track the mouse in the y axis
+                                                                        radius: 2
+                            },
+                        grid: {verticalLines: false,backgroundColor: 'white'},
+                        yaxis: {min:0, title: "New Recovered",titleAngle: 90,titleAlign: 'center'},
+                        xaxis: {ticks:sarr, min: 0, title: "Date"}, //koordinat x
+                        HtmlText: false,
+                        legend: {position: 'nw'}
+                        
+                    });
+                };
+                xhttp.open("GET", "../datacovid2021/datanovember.json", true);
+                xhttp.send();
+            }
+                
+            function grafik2(){
+                // Total Active Case
+                var lokasi = [[1, "ACEH"],[2, "SUMATERA UTARA"],[3, "SUMATERA BARAT"],[4, "RIAU"],[5, "JAMBI"],
+                    [6, "SUMATERA SELATAN"],[7, "BENGKULU"],[8, "LAMPUNG"],[9, "KEPULAUAN BANGKA BELITUNG"],[10, "KEPULAUAN RIAU"],
+                    [11, "DKI JAKARTA"], [12, "JAWA BARAT"],[13, "JAWA TENGAH"], [14, "DI YOGYAKARTA"], [15, "JAWA TIMUR"],
+                    [16, "BANTEN"],[17, "BALI"], [18, "NUSA TENGGARA BARAT"],[19, "NUSA TENGGARA TIMUR"], [20, "KALIMANTAN BARAT"],
+                    [21, "KALIMANTAN TENGAH"], [22, "KALIMANTAN SELATAN"],[23, "KALIMANTAN TIMUR"], [24, "KALIMANTAN UTARA"],[25, "SULAWESI UTARA"],
+                    [26, "SULAWESI TENGAH"], [27, "SULAWESI SELATAN"], [28, "SULAWESI TENGGARA"],[29, "GORONTALO"], [30, "SULAWESI BARAT"],
+                    [31, "MALUKU"], [32, "MALUKU UTARA"],[33, "PAPUA BARAT"], [34, "PAPUA"], [35, "INDONESIA"]
+                ];  
+
+                // grafik minggu ke 2
+                var arr = [];
+                var xarr = [];
+                var sarr = [];
+                var strt = [];
+                var finish = [];
+                var j = 0;
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var datacovid=JSON.parse(xhttp.responseText);
+                        for (var i=0; i<datacovid.length; i++) {
+                            if(parseInt(datacovid[i].Date.substring(6,10)) == 2021){
+                                if(parseInt(datacovid[i].Date.substring(3,5)) == 11){
+                                    if((parseInt(datacovid[i].Date.substring(0,2)) >= 8) && (parseInt(datacovid[i].Date.substring(0,2)) <= 14)){
+                                        if(parseInt(datacovid[i].Id_Location) == 35){
+                                            arr.push([j, parseInt(datacovid[i].New_Recovered)]);
+                                            xarr.push([j, datacovid[i].Date]); 
+                                            sarr.push([j, datacovid[i].Date.substring(0,2)])
+                                            j++;
+                                        } 
+                                    }
+                                }
+                            } 
+                        }
+                        // strt = xarr[0][1];
+                        // finish = xarr[xarr.length-1][1];
+                        strt = xarr[0][1];
+                        finish = xarr[xarr.length-1][1];
+                    }          
+
+                    Flotr.draw(document.getElementById("grafik2"), 
+                        [arr], {title :'Minggu ke-2',
+                        bars:{show:true},
+                        colors: ['blue'],
+                        mouse: {
+                                track: true,
+                                lineColor: 'darkred',                                
+                                trackFormatter: function(obj){ return `New Recovered: ${obj.y} | Indonesia | ${xarr[obj.x][1]}`; },                                    
+                                                                        trackDecimals: 0, 
+                                                                        trackY: true,          // => whether or not to track the mouse in the y axis
+                                                                        radius: 2
+                            },
+                        grid: {verticalLines: false,backgroundColor: 'white'},
+                        yaxis: {min:0, title: "New Recovered",titleAngle: 90,titleAlign: 'center'},
+                        xaxis: {ticks:sarr, min: 0, title: "Date"}, //koordinat x
+                        HtmlText: false,
+                        legend: {position: 'nw'}
+                        
+                    });
+                };
+                xhttp.open("GET", "../datacovid2021/datanovember.json", true);
+                xhttp.send();
+            }    
+
+            function grafik3(){
+                // Total Active Case
+                var lokasi = [[1, "ACEH"],[2, "SUMATERA UTARA"],[3, "SUMATERA BARAT"],[4, "RIAU"],[5, "JAMBI"],
+                    [6, "SUMATERA SELATAN"],[7, "BENGKULU"],[8, "LAMPUNG"],[9, "KEPULAUAN BANGKA BELITUNG"],[10, "KEPULAUAN RIAU"],
+                    [11, "DKI JAKARTA"], [12, "JAWA BARAT"],[13, "JAWA TENGAH"], [14, "DI YOGYAKARTA"], [15, "JAWA TIMUR"],
+                    [16, "BANTEN"],[17, "BALI"], [18, "NUSA TENGGARA BARAT"],[19, "NUSA TENGGARA TIMUR"], [20, "KALIMANTAN BARAT"],
+                    [21, "KALIMANTAN TENGAH"], [22, "KALIMANTAN SELATAN"],[23, "KALIMANTAN TIMUR"], [24, "KALIMANTAN UTARA"],[25, "SULAWESI UTARA"],
+                    [26, "SULAWESI TENGAH"], [27, "SULAWESI SELATAN"], [28, "SULAWESI TENGGARA"],[29, "GORONTALO"], [30, "SULAWESI BARAT"],
+                    [31, "MALUKU"], [32, "MALUKU UTARA"],[33, "PAPUA BARAT"], [34, "PAPUA"], [35, "INDONESIA"]
+                ];  
+
+                // grafik minggu ke 3
+                var arr = [];
+                var xarr = [];
+                var sarr = [];
+                var strt = [];
+                var finish = [];
+                var j = 0;
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var datacovid=JSON.parse(xhttp.responseText);
+                        for (var i=0; i<datacovid.length; i++) {
+                            if(parseInt(datacovid[i].Date.substring(6,10)) == 2021){
+                                if(parseInt(datacovid[i].Date.substring(3,5)) == 11){
+                                    if((parseInt(datacovid[i].Date.substring(0,2)) >= 15) && (parseInt(datacovid[i].Date.substring(0,2)) <= 21)){
+                                        if(parseInt(datacovid[i].Id_Location) == 35){
+                                            arr.push([j, parseInt(datacovid[i].New_Recovered)]);
+                                            xarr.push([j, datacovid[i].Date]); 
+                                            sarr.push([j, datacovid[i].Date.substring(0,2)])
+                                            j++;
+                                        } 
+                                    }
+                                }
+                            } 
+                        }
+                        // strt = xarr[0][1];
+                        // finish = xarr[xarr.length-1][1];
+                        strt = xarr[0][1];
+                        finish = xarr[xarr.length-1][1];
+                    }          
+
+                    Flotr.draw(document.getElementById("grafik3"), 
+                        [arr], {title :'Minggu ke-3',
+                        bars:{show:true},
+                        colors: ['purple'],
+                        mouse: {
+                                track: true,
+                                lineColor: 'darkred',                                
+                                trackFormatter: function(obj){ return `New Recovered: ${obj.y} | Indonesia | ${xarr[obj.x][1]}`; },                                    
+                                                                        trackDecimals: 0, 
+                                                                        trackY: true,          // => whether or not to track the mouse in the y axis
+                                                                        radius: 2
+                            },
+                        grid: {verticalLines: false,backgroundColor: 'white'},
+                        yaxis: {min:0, title: "New Recovered",titleAngle: 90,titleAlign: 'center'},
+                        xaxis: {ticks:sarr, min: 0, title: "Date"}, //koordinat x
+                        HtmlText: false,
+                        legend: {position: 'nw'}
+                        
+                    });
+                };
+                xhttp.open("GET", "../datacovid2021/datanovember.json", true);
+                xhttp.send();
+            } 
+
+            function grafik4(){
+                // Total Active Case
+                var lokasi = [[1, "ACEH"],[2, "SUMATERA UTARA"],[3, "SUMATERA BARAT"],[4, "RIAU"],[5, "JAMBI"],
+                    [6, "SUMATERA SELATAN"],[7, "BENGKULU"],[8, "LAMPUNG"],[9, "KEPULAUAN BANGKA BELITUNG"],[10, "KEPULAUAN RIAU"],
+                    [11, "DKI JAKARTA"], [12, "JAWA BARAT"],[13, "JAWA TENGAH"], [14, "DI YOGYAKARTA"], [15, "JAWA TIMUR"],
+                    [16, "BANTEN"],[17, "BALI"], [18, "NUSA TENGGARA BARAT"],[19, "NUSA TENGGARA TIMUR"], [20, "KALIMANTAN BARAT"],
+                    [21, "KALIMANTAN TENGAH"], [22, "KALIMANTAN SELATAN"],[23, "KALIMANTAN TIMUR"], [24, "KALIMANTAN UTARA"],[25, "SULAWESI UTARA"],
+                    [26, "SULAWESI TENGAH"], [27, "SULAWESI SELATAN"], [28, "SULAWESI TENGGARA"],[29, "GORONTALO"], [30, "SULAWESI BARAT"],
+                    [31, "MALUKU"], [32, "MALUKU UTARA"],[33, "PAPUA BARAT"], [34, "PAPUA"], [35, "INDONESIA"]
+                ];
+                
+                
+                // grafik minggu ke 4
+                var arr = [];
+                var xarr = [];
+                var sarr = [];
+                var strt = [];
+                var finish = [];
+                var j = 0;
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var datacovid=JSON.parse(xhttp.responseText);
+                        for (var i=0; i<datacovid.length; i++) {
+                            if(parseInt(datacovid[i].Date.substring(6,10)) == 2021){
+                                if(parseInt(datacovid[i].Date.substring(3,5)) == 11){
+                                    if((parseInt(datacovid[i].Date.substring(0,2)) >= 22) && (parseInt(datacovid[i].Date.substring(0,2)) <= 28)){
+                                        if(parseInt(datacovid[i].Id_Location) == 35){
+                                            arr.push([j, parseInt(datacovid[i].New_Recovered)]);
+                                            xarr.push([j, datacovid[i].Date]); 
+                                            sarr.push([j, datacovid[i].Date.substring(0,2)])
+                                            j++;
+                                        } 
+                                    }
+                                }
+                            } 
+                        }
+                        // strt = xarr[0][1];
+                        // finish = xarr[xarr.length-1][1];
+                        strt = xarr[0][1];
+                        finish = xarr[xarr.length-1][1];
+                    }          
+
+                    Flotr.draw(document.getElementById("grafik4"), 
+                        [arr], {title :'Minggu ke-4',
+                        bars:{show:true},
+                        colors: ['orange'],
+                        mouse: {
+                                track: true,
+                                lineColor: 'darkred',                                
+                                trackFormatter: function(obj){ return `New Recovered: ${obj.y} | Indonesia | ${xarr[obj.x][1]}`; },                                    
+                                                                        trackDecimals: 0, 
+                                                                        trackY: true,          // => whether or not to track the mouse in the y axis
+                                                                        radius: 2
+                            },
+                        grid: {verticalLines: false,backgroundColor: 'white'},
+                        yaxis: {min:0, title: "New Recovered",titleAngle: 90,titleAlign: 'center'},
+                        xaxis: {ticks:sarr, min: 0, title: "Date"}, //koordinat x
+                        HtmlText: false,
+                        legend: {position: 'nw'}
+                        
+                    });
+                };
+                xhttp.open("GET", "../datacovid2021/datanovember.json", true);
+                xhttp.send();
+            } 
+
+            function grafik5(){
+                // Total Active Case
+                var lokasi = [[1, "ACEH"],[2, "SUMATERA UTARA"],[3, "SUMATERA BARAT"],[4, "RIAU"],[5, "JAMBI"],
+                    [6, "SUMATERA SELATAN"],[7, "BENGKULU"],[8, "LAMPUNG"],[9, "KEPULAUAN BANGKA BELITUNG"],[10, "KEPULAUAN RIAU"],
+                    [11, "DKI JAKARTA"], [12, "JAWA BARAT"],[13, "JAWA TENGAH"], [14, "DI YOGYAKARTA"], [15, "JAWA TIMUR"],
+                    [16, "BANTEN"],[17, "BALI"], [18, "NUSA TENGGARA BARAT"],[19, "NUSA TENGGARA TIMUR"], [20, "KALIMANTAN BARAT"],
+                    [21, "KALIMANTAN TENGAH"], [22, "KALIMANTAN SELATAN"],[23, "KALIMANTAN TIMUR"], [24, "KALIMANTAN UTARA"],[25, "SULAWESI UTARA"],
+                    [26, "SULAWESI TENGAH"], [27, "SULAWESI SELATAN"], [28, "SULAWESI TENGGARA"],[29, "GORONTALO"], [30, "SULAWESI BARAT"],
+                    [31, "MALUKU"], [32, "MALUKU UTARA"],[33, "PAPUA BARAT"], [34, "PAPUA"], [35, "INDONESIA"]
+                ];
+                
+                
+                // grafik minggu ke 4
+                var arr = [];
+                var xarr = [];
+                var sarr = [];
+                var strt = [];
+                var finish = [];
+                var j = 0;
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var datacovid=JSON.parse(xhttp.responseText);
+                        for (var i=0; i<datacovid.length; i++) {
+                            if(parseInt(datacovid[i].Date.substring(6,10)) == 2021){
+                                if(parseInt(datacovid[i].Date.substring(3,5)) == 11){
+                                    if((parseInt(datacovid[i].Date.substring(0,2)) >= 29)){
+                                        if(parseInt(datacovid[i].Id_Location) == 35){
+                                            arr.push([j, parseInt(datacovid[i].New_Recovered)]);
+                                            xarr.push([j, datacovid[i].Date]); 
+                                            sarr.push([j, datacovid[i].Date.substring(0,2)])
+                                            j++;
+                                        } 
+                                    }
+                                }
+                            } 
+                        }
+                        // strt = xarr[0][1];
+                        // finish = xarr[xarr.length-1][1];
+                        strt = xarr[0][1];
+                        finish = xarr[xarr.length-1][1];
+                    }          
+
+                    Flotr.draw(document.getElementById("grafik5"), 
+                        [arr], {title :'Minggu ke-5',
+                        bars:{show:true},
+                        colors: ['brown'],
+                        mouse: {
+                                track: true,
+                                lineColor: 'darkred',                                
+                                trackFormatter: function(obj){ return `New Recovered: ${obj.y} | Indonesia | ${xarr[obj.x][1]}`; },                                    
+                                                                        trackDecimals: 0, 
+                                                                        trackY: true,          // => whether or not to track the mouse in the y axis
+                                                                        radius: 2
+                            },
+                        grid: {verticalLines: false,backgroundColor: 'white'},
+                        yaxis: {min:0, title: "New Recovered",titleAngle: 90,titleAlign: 'center'},
+                        xaxis: {ticks:sarr, min: 0, title: "Date"}, //koordinat x
+                        HtmlText: false,
+                        legend: {position: 'nw'}
+                        
+                    });
+                };
+                xhttp.open("GET", "../datacovid2021/datanovember.json", true);
+                xhttp.send();
+            } 
+
+            grafik1();
+            grafik2();
+            grafik3();
+            grafik4();
+            grafik5();
+        </script>
+    </body>
+</html>
